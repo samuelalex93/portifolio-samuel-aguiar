@@ -1,0 +1,9 @@
+aside {
+  background-color: var(--color-base-gray-100);
+  padding-bottom: 32px;
+}
+
+.border-12 {
+  border: 3px solid var(--color-base-gray-200);
+  border-radius: 12px;
+}

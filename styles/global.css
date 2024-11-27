@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-principal-red: #E3646E;
+  --color-principal-purple: #BB72E9;
+  --color-principal-blue: #3996DB;
+  --color-principal-green: #82BC4F;
+  --color-principal-yellow: #EABD5F;
+
+  --color-base-gray-100: #0D0E11;
+  --color-base-gray-200: #16181D;
+  --color-base-gray-300: #292C34;
+  --color-base-gray-400: #878EA1;
+  --color-base-gray-500: #C0C4CE;
+  --color-base-gray-600: #E2E4E9;
+
+  --font-family-asap: 'Asap', sans-serif;
+  --font-family-incons: 'Inconsolata', monospace, sans-serif;
+  --font-family-maven: 'Maven Pro', sans-serif;
+
+  --title-lg: bold 56px/120% var(--font-family-asap);
+  --title-md: bold 24px/120% var(--font-family-asap);
+  --title-sm: bold 16px/120% var(--font-family-asap);
+
+
+  --subtitle: 20px/120% var(--font-family-incons);
+  --text-md: 16px/140% var(--font-family-maven);
+  --text-sm: 14px/140% var(--font-family-maven);
+}
+
+#pointer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 56px;
+
+  span {
+    margin-top: 72px;
+  }
+
+  h3 {
+    font: var(--subtitle);
+    color: #BB72E9;
+  }
+}
+

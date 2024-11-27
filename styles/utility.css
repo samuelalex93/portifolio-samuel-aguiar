@@ -1,0 +1,58 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  justify-self: center;
+}
+
+.grid-bt {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.main-red {
+  color: #E3646E;
+  font: var(--subtitle);
+}
+
+.title-md {
+  font: var(--title-md);
+  color: var(--color-base-gray-600);
+}
+
+.text-md {
+  font: var(--text-md);
+  color: var(--color-base-gray-500);
+}
+
+.title-sm {
+  font: var(--title-sm);
+  color: var(--color-base-gray-600);
+}
+
+.text-sm {
+  font: var(--text-sm);
+  color: var(--color-base-gray-500);
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.pad-4 {
+  padding: 4px;
+}
+
+.pad-20 {
+  padding: 20px;
+}
+
+.margin {
+  margin-top: 20px;
+}
+
+.margin-bt {
+  margin-bottom: 48px;
+}

@@ -1,0 +1,30 @@
+#tags {
+  display: flex;
+
+  justify-self: center;
+  justify-content: space-between;
+  margin-top: 80px;
+
+  width: 754px;
+  height: 40px;
+}
+
+.cards {
+  display: flex;
+  padding: 8px 16px;
+  gap: 8px;
+
+  background: var(--color-base-gray-300);
+  border-radius: 999px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  p {
+    font: var(--text-md);
+    text-decoration: none;
+    color: var(--color-base-gray-500);
+  }
+}

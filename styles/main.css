@@ -1,0 +1,28 @@
+main {
+  box-sizing: border-box;
+  background-color: var(--color-base-gray-200);
+  padding-bottom: 32px;
+}
+
+.project-card {
+  width: 330px;
+  height: 280px;
+  padding: 12px;
+  transition: box-shadow 0.5s ease;
+
+
+  box-shadow: 0 0 0 1px #000000;
+  border-radius: 12px;
+  background-color: var(--color-base-gray-300);
+
+  &:hover {
+    box-shadow: 0 0 0 1.5px var(--color-base-gray-400);
+  }
+
+  img {
+    width: 306px;
+    height: 156px;
+
+    border-radius: 8px;
+  }
+}
