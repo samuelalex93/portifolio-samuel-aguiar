@@ -1,0 +1,26 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 0 1px var(--color-base-gray-300);
+  background-color: var(--color-base-gray-300);
+  height: 40px;
+  align-content: center;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.navbar ul > li > a {
+  text-decoration: none;
+  font: var(--text-md);
+  color: var(--color-base-gray-600);
+  font-weight: bold;
+}
