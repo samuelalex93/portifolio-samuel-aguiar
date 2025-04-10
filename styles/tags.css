@@ -1,12 +1,24 @@
 #tags {
   display: flex;
+  flex-direction: column; /* Adjust for one item per line on smaller screens */
 
   justify-self: center;
   justify-content: space-between;
   margin-top: 80px;
 
-  width: 754px;
-  height: 40px;
+  width: 100%; /* Adjust width for responsiveness */
+  max-width: 754px;
+  height: auto; /* Allow height to adjust dynamically */
+  gap: 16px; /* Add spacing between items */
+}
+
+@media (min-width: 768px) {
+  #tags {
+    flex-direction: row; /* Revert to original layout for larger screens */
+    width: 754px;
+    height: 40px;
+    gap: 8px; /* Add spacing between items for larger screens */
+  }
 }
 
 .cards {
@@ -16,6 +28,8 @@
 
   background: var(--color-base-gray-300);
   border-radius: 999px;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 
   img {
     width: 24px;

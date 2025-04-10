@@ -1,12 +1,12 @@
 main {
   box-sizing: border-box;
   background-color: var(--color-base-gray-200);
-  padding-bottom: 32px;
+  padding-bottom: 128px;
 }
 
 .project-card {
   width: 330px;
-  height: 280px;
+  height: 100%;
   padding: 12px;
   transition: box-shadow 0.5s ease;
 
