@@ -48,9 +48,9 @@ const translations = {
 
 const setLanguage = (lang) => {
   let url =
-    lang == "en"
-      ? "https://typescriptlang.org"
-      : "https://docs.google.com/document/d/e/2PACX-1vTIoGvayrFi08Mh3WS_UjOc2aTSBBfj0v6FX2JT5mti7dzm826iQbgwf8kd2gRDLQ/pub";
+    lang == "en" 
+      ? "https://docs.google.com/document/d/e/2PACX-1vTIoGvayrFi08Mh3WS_UjOc2aTSBBfj0v6FX2JT5mti7dzm826iQbgwf8kd2gRDLQ/pub" 
+      : "https://docs.google.com/document/d/e/2PACX-1vSjDCW0l3Csac8aE69HSMPtNA09Fp8Up3fS1wRObmWNq3-iWaTG3ydbGgj0jadRog/pub"
   const link = document.getElementById("myResumeLink");
   link.href = url;
   link.textContent = "Go to Resume";
