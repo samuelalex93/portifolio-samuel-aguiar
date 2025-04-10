@@ -20,22 +20,33 @@
   <header>
     <nav class=navbar>
       <ul>
-        <li><a href="#info">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a
+        <li><a href="#info" data-translate="about">About</a></li>
+        <li><a href="#projects" data-translate="projects">Projects</a></li>
+        <li><a href="#services" data-translate="services">Services</a></li>
+        <li><a href="#contact" data-translate="contact">Contact</a></li>
+        <li><a id="myResumeLink"
             href="https://docs.google.com/document/d/e/2PACX-1vTIoGvayrFi08Mh3WS_UjOc2aTSBBfj0v6FX2JT5mti7dzm826iQbgwf8kd2gRDLQ/pub"
-            target="_blank">Resume</a></li>
+            target="_blank" data-translate="resume">Resume</a>
+        </li>
+        <li>
+          <button onclick="setLanguage('en')">
+            <img src="assets/usa.svg" alt="English">
+          </button>
+        </li>
+        <li>
+          <button onclick="setLanguage('pt')">
+            <img src="assets/brazil.svg" alt="Portuguese">
+          </button>
+        </li>
       </ul>
     </nav>
     <div id="info">
       <img src="assets/Avatar.png" alt="" style="border-radius: 100%;box-shadow: 0 0 0 1px violet; line-height: 1;">
     </div>
     <div class="text-title">
-      <h2 class="main-red">Hi! I'm <span class="main-red">Samuel Aguiar</span></h2>
+      <h2 class="main-red"><span data-translate="hi">Hi! I'm</span> <span class="main-red">Samuel Aguiar</span></h2>
       <h1>Software Engineer</h1>
-      <p>
+      <p data-translate="description">
         With over 8 years of experience in the technology field, transforming needs into real, engaging and functional
         applications.<br />
         My passion for technology motivates me to develop systems that offer innovative and effective solutions to
@@ -52,7 +63,7 @@
 
       <span class="cards">
         <img id="" src="assets/typescript.svg" alt="Card with HTML logo">
-        <p>Typescript</p>
+        <p>TypeScript</p>
       </span>
 
       <span class="cards">
@@ -83,10 +94,10 @@
 
   <main id="projects">
     <div class="main-header">
-      <span class="main-red">
+      <span class="main-red" data-translate="projects">
         Projects
       </span>
-      <h2 class="title-md">
+      <h2 class="title-md" data-translate="featuredProjects">
         My featured projects
       </h2>
     </div>
@@ -125,10 +136,10 @@
 
   <aside id="services">
     <div class="main-header">
-      <span class="main-red">
+      <span class="main-red" data-translate="myServices">
         My services
       </span>
-      <h2 class="title-md">
+      <h2 class="title-md" data-translate="helpCompany">
         How can I help your company
       </h2>
     </div>
@@ -138,8 +149,8 @@
         <img src="assets/Devices.svg" alt="">
 
         <figcaption class="margin">
-          <h2 class="title-sm">Websites and Apps</h2>
-          <p class="text-sm">Interface development</p>
+          <h2 class="title-sm" data-translate="websitesApps">Websites and Apps</h2>
+          <p class="text-sm" data-translate="interfaceDev">Interface development</p>
         </figcaption>
       </figure>
 
@@ -147,8 +158,8 @@
         <img src="assets/HardDrives.svg" alt="">
 
         <figcaption class="margin">
-          <h2 class="title-sm">Services</h2>
-          <p class="text-sm">Services and microservices development</p>
+          <h2 class="title-sm" data-translate="services">Services</h2>
+          <p class="text-sm" data-translate="servicesDescription">Services and microservices development</p>
         </figcaption>
       </figure>
 
@@ -157,7 +168,7 @@
 
         <figcaption class="margin">
           <h2 class="title-sm">DevOps</h2>
-          <p class="text-sm">Implementation and management of production environment</p>
+          <p class="text-sm"data-translate="devOpsDescription" >Implementation and management of production environment</p>
         </figcaption>
       </figure>
     </div>
@@ -165,8 +176,8 @@
 
   <footer id="contact">
     <div class="main-header  margin-bt">
-      <h3>Contact</h3>
-      <h2 class="title-md">Did you like my work? Let's get in touch</h2>
+      <h3 data-translate="contact">Contact</h3>
+      <h2 class="title-md" data-translate="contactSubtitle">Did you like my work? Let's get in touch</h2>
     </div>
 
     <div class="grid-bt">
@@ -199,15 +210,13 @@
           href="https://docs.google.com/document/d/e/2PACX-1vTIoGvayrFi08Mh3WS_UjOc2aTSBBfj0v6FX2JT5mti7dzm826iQbgwf8kd2gRDLQ/pub"
           target="_blank">
           <img class="icon-social" src="assets/doc.svg" alt="">
-          <h3 class="text-md">Resume</h3>
+          <h3 class="text-md" data-translate="resume">Resume</h3>
           <span class="arrow"></span>
         </a>
       </section>
     </div>
   </footer>
-  <script>
-
-  </script>
+  <script src="./scripts/index.js"></script>
 </body>
 
 </html>
