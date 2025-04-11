@@ -66,3 +66,13 @@ const menu = document.querySelector('.navbar ul.menu');
 toggleButton.addEventListener('click', () => {
   menu.classList.toggle('open');
 });
+
+const menuItems = menu.querySelectorAll('a, button');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    }
+  });
+});
